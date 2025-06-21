@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+
+    <style>
+        canvas {
+            margin: 0;
+            padding: 0;
+            display: block;
+            border: 1px solid black;
+        } 
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'red';
+        ctx.fillRect(0, 0, 200, 100);
+        
+    </script>
+</body>
+</html>
